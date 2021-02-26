@@ -3042,22 +3042,10 @@
   dependencies:
     "@umijs/utils" "3.3.9"
 
-"@umijs/babel-plugin-auto-css-modules@3.3.7":
-  version "3.3.7"
-  resolved "https://registry.npm.taobao.org/@umijs/babel-plugin-auto-css-modules/download/@umijs/babel-plugin-auto-css-modules-3.3.7.tgz?cache=0&sync_timestamp=1611129515414&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fbabel-plugin-auto-css-modules%2Fdownload%2F%40umijs%2Fbabel-plugin-auto-css-modules-3.3.7.tgz#e78941d230d39cd721af111c8802861a59baa863"
-  integrity sha1-54lB0jDTnNchrxEciAKGGlm6qGM=
-
 "@umijs/babel-plugin-auto-css-modules@3.3.9":
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-auto-css-modules/-/babel-plugin-auto-css-modules-3.3.9.tgz#acdf5589163b6b7c041c89257b1ba7d3a02292c7"
   integrity sha512-vd9/oFJS8UhsyQJyLOFYXfm75hOsvJQV8/oczmcrBamHe2OfTssx9mTd94NPvTlCnJyahRYTc02L7YprCoyBRw==
-
-"@umijs/babel-plugin-import-to-await-require@3.3.7":
-  version "3.3.7"
-  resolved "https://registry.npm.taobao.org/@umijs/babel-plugin-import-to-await-require/download/@umijs/babel-plugin-import-to-await-require-3.3.7.tgz#ba5090953d04fc98079e6e02b5df4b918ba1fd64"
-  integrity sha1-ulCQlT0E/JgHnm4Ctd9LkYuh/WQ=
-  dependencies:
-    "@babel/types" "7.12.6"
 
 "@umijs/babel-plugin-import-to-await-require@3.3.9":
   version "3.3.9"
@@ -3066,14 +3054,6 @@
   dependencies:
     "@babel/types" "7.12.6"
 
-"@umijs/babel-plugin-lock-core-js-3@3.3.7":
-  version "3.3.7"
-  resolved "https://registry.npm.taobao.org/@umijs/babel-plugin-lock-core-js-3/download/@umijs/babel-plugin-lock-core-js-3-3.3.7.tgz?cache=0&sync_timestamp=1611129516447&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fbabel-plugin-lock-core-js-3%2Fdownload%2F%40umijs%2Fbabel-plugin-lock-core-js-3-3.3.7.tgz#eee3eb8a07ca70b833c7ba444c9c004e82f17f14"
-  integrity sha1-7uPrigfKcLgzx7pETJwAToLxfxQ=
-  dependencies:
-    "@umijs/utils" "3.3.7"
-    core-js "3.6.5"
-
 "@umijs/babel-plugin-lock-core-js-3@3.3.9":
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-lock-core-js-3/-/babel-plugin-lock-core-js-3-3.3.9.tgz#60bc5ae2b07a80aab1c104edf23ac314c25683be"
@@ -3081,38 +3061,6 @@
   dependencies:
     "@umijs/utils" "3.3.9"
     core-js "3.6.5"
-
-"@umijs/babel-preset-umi@3.3.7":
-  version "3.3.7"
-  resolved "https://registry.npm.taobao.org/@umijs/babel-preset-umi/download/@umijs/babel-preset-umi-3.3.7.tgz?cache=0&sync_timestamp=1611129514663&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fbabel-preset-umi%2Fdownload%2F%40umijs%2Fbabel-preset-umi-3.3.7.tgz#0627fcdbbb0d9e64138be6b05ef2c3d447acaca0"
-  integrity sha1-Bif827sNnmQTi+awXvLD1EesrKA=
-  dependencies:
-    "@babel/plugin-proposal-class-properties" "7.12.1"
-    "@babel/plugin-proposal-decorators" "7.12.1"
-    "@babel/plugin-proposal-do-expressions" "7.12.1"
-    "@babel/plugin-proposal-export-default-from" "7.12.1"
-    "@babel/plugin-proposal-function-bind" "7.12.1"
-    "@babel/plugin-proposal-logical-assignment-operators" "7.12.1"
-    "@babel/plugin-proposal-nullish-coalescing-operator" "7.12.1"
-    "@babel/plugin-proposal-optional-chaining" "7.12.1"
-    "@babel/plugin-proposal-pipeline-operator" "7.12.1"
-    "@babel/plugin-syntax-top-level-await" "7.12.1"
-    "@babel/plugin-transform-destructuring" "7.12.1"
-    "@babel/plugin-transform-runtime" "7.12.1"
-    "@babel/preset-env" "7.12.1"
-    "@babel/preset-react" "7.12.1"
-    "@babel/preset-typescript" "7.12.1"
-    "@babel/runtime" "7.12.5"
-    "@svgr/webpack" "4.3.3"
-    "@umijs/babel-plugin-auto-css-modules" "3.3.7"
-    "@umijs/babel-plugin-import-to-await-require" "3.3.7"
-    "@umijs/babel-plugin-lock-core-js-3" "3.3.7"
-    babel-plugin-dynamic-import-node "2.3.3"
-    babel-plugin-import "^1.13.1"
-    babel-plugin-named-asset-import "0.3.7"
-    babel-plugin-react-require "3.1.3"
-    babel-plugin-transform-react-remove-prop-types "0.4.24"
-    babel-plugin-transform-typescript-metadata "0.3.1"
 
 "@umijs/babel-preset-umi@3.3.9":
   version "3.3.9"
@@ -3587,55 +3535,6 @@
     "@umijs/utils" "3.3.9"
     webpack-chain "6.5.1"
 
-"@umijs/utils@3.3.7":
-  version "3.3.7"
-  resolved "https://registry.npm.taobao.org/@umijs/utils/download/@umijs/utils-3.3.7.tgz?cache=0&sync_timestamp=1611129515768&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Futils%2Fdownload%2F%40umijs%2Futils-3.3.7.tgz#33a5dcb86508428c96774f03191842ac299bbe22"
-  integrity sha1-M6XcuGUIQoyWd08DGRhCrCmbviI=
-  dependencies:
-    "@babel/parser" "7.12.11"
-    "@babel/register" "7.12.10"
-    "@babel/traverse" "7.12.12"
-    "@babel/types" "7.12.12"
-    "@types/cheerio" "0.22.23"
-    "@types/color" "3.0.1"
-    "@types/cross-spawn" "6.0.2"
-    "@types/debug" "4.1.5"
-    "@types/glob" "7.1.3"
-    "@types/got" "9.6.11"
-    "@types/lodash" "4.14.167"
-    "@types/mkdirp" "1.0.1"
-    "@types/mustache" "4.1.0"
-    "@types/resolve" "1.17.1"
-    "@types/rimraf" "3.0.0"
-    "@types/semver" "7.3.4"
-    "@types/signale" "1.4.1"
-    "@types/yargs" "15.0.12"
-    "@types/yargs-parser" "15.0.0"
-    address "1.1.2"
-    chalk "4.1.0"
-    cheerio "1.0.0-rc.3"
-    chokidar "3.4.3"
-    clipboardy "2.3.0"
-    color "3.1.3"
-    crequire "1.8.1"
-    cross-spawn "7.0.3"
-    debug "4.3.1"
-    deepmerge "4.2.2"
-    execa "4.0.3"
-    glob "7.1.6"
-    got "9.6.0"
-    lodash "4.17.20"
-    mkdirp "1.0.4"
-    mustache "4.1.0"
-    pkg-up "3.1.0"
-    portfinder "1.0.28"
-    resolve "1.19.0"
-    rimraf "3.0.2"
-    semver "7.3.4"
-    signale "1.4.0"
-    yargs "15.4.1"
-    yargs-parser "18.1.3"
-
 "@umijs/utils@3.3.9", "@umijs/utils@^3.0.0-beta.12":
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/@umijs/utils/-/utils-3.3.9.tgz#5f5ee23854934834bbc70315168711341e953887"
@@ -3695,15 +3594,15 @@
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
 
-"@vercel/build-utils@2.9.0":
-  version "2.9.0"
-  resolved "https://registry.npm.taobao.org/@vercel/build-utils/download/@vercel/build-utils-2.9.0.tgz#2bb5def3df7080a892d86e25c7bb1af35f2b8964"
-  integrity sha1-K7Xe899wgKiS2G4lx7sa818riWQ=
+"@vercel/build-utils@2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-2.10.0.tgz#69b6e7f6d4572951d4c8409bd8d83a8d12c7e842"
+  integrity sha512-2Xr+bUGvNtKULVNoJacnvlyDDoYaw6x68LF0fD/dPoIX0Ihz6rKV+zO2+hQQy8oJEyQ/JdYm6yAGekf85v7RYA==
 
-"@vercel/go@1.1.8":
-  version "1.1.8"
-  resolved "https://registry.npm.taobao.org/@vercel/go/download/@vercel/go-1.1.8.tgz#18c10c0e608f83d5c67546b01b7267f943c0b01d"
-  integrity sha1-GMEMDmCPg9XGdUawG3Jn+UPAsB0=
+"@vercel/go@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vercel/go/-/go-1.2.0.tgz#a8438e6d97a89de4e1c365c45347e57423375e70"
+  integrity sha512-xuoJ80QQ7Xa9ZbjUQ/QdDmi20ZqIMdxK+iFOakpFOCEyoxTnjZxyM+JJSB4AVD7k2UPaRmN14xaEg8GNMoByLQ==
 
 "@vercel/node@1.9.1-canary.0":
   version "1.9.1-canary.0"
@@ -18332,13 +18231,13 @@ vendors@^1.0.0:
   resolved "https://registry.npm.taobao.org/vendors/download/vendors-1.0.4.tgz#e2b800a53e7a29b93506c3cf41100d16c4c4ad8e"
   integrity sha1-4rgApT56Kbk1BsPPQRANFsTErY4=
 
-vercel@^21.2.3:
-  version "21.2.3"
-  resolved "https://registry.npm.taobao.org/vercel/download/vercel-21.2.3.tgz#385dd704f1905a77d6e0b6c63bfd7aa6dcdee710"
-  integrity sha1-OF3XBPGQWnfW4LbGO/16ptze5xA=
+vercel@^21.3.0:
+  version "21.3.0"
+  resolved "https://registry.yarnpkg.com/vercel/-/vercel-21.3.0.tgz#c8dfb1d72ff979d14f0494f76143e80f4fafcc9b"
+  integrity sha512-wQz0K8iGJIBU6IBpxFvNUM7eftwR83ZRJ9O8vIxnfYotvixvCXpf9qF1gjoSiIHQwz51tunxZYQnNajg/VcdKA==
   dependencies:
-    "@vercel/build-utils" "2.9.0"
-    "@vercel/go" "1.1.8"
+    "@vercel/build-utils" "2.10.0"
+    "@vercel/go" "1.2.0"
     "@vercel/node" "1.9.1-canary.0"
     "@vercel/python" "1.2.5-canary.1"
     "@vercel/ruby" "1.2.6-canary.0"
