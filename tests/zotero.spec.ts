@@ -1,4 +1,4 @@
-import BooksList from '../books/[year]';
+import BooksList from '../api/books/[year]';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 describe('Zotero 书单', () => {

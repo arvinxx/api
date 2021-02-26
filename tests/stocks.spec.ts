@@ -2,8 +2,8 @@
  * @jest-environment node
  */
 
-import Token from '../stocks/token';
-import Item from '../stocks/item/[code]';
+import Token from '../api/stocks/token';
+import Item from '../api/stocks/item/[code]';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 describe('股票数据', () => {
