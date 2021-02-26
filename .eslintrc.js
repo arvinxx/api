@@ -7,6 +7,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/method-signature-style': 0,
+    '@typescript-eslint/no-shadow': 0,
   },
   ignorePatterns: ['*.js'],
 };
