@@ -15946,10 +15946,10 @@ semantic-release-config-gitmoji-module@^1.1.0:
     "@semantic-release/git" "^9.0.0"
     conventional-changelog-gitmoji-config "1.4.0"
 
-semantic-release@^17.3.7:
-  version "17.3.9"
-  resolved "https://registry.npm.taobao.org/semantic-release/download/semantic-release-17.3.9.tgz?cache=0&sync_timestamp=1613399644517&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemantic-release%2Fdownload%2Fsemantic-release-17.3.9.tgz#99ebe7ef7c6b79b3bfb44baeaf242c6fc6a31f09"
-  integrity sha1-mevn73xrebO/tEuuryQsb8ajHwk=
+semantic-release@^17.4.0:
+  version "17.4.0"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.4.0.tgz#a7f86b20534f77870e6471ec6609b160aa672ae4"
+  integrity sha512-FrPUpqKobak39F/6HnxhBK6LdL2ZEHadz5qVDTIJ9qlJ6bw8BQ5sguZ2j0ewI0aqRcLf/u9LGy/kOnUy0v7NbQ==
   dependencies:
     "@semantic-release/commit-analyzer" "^8.0.0"
     "@semantic-release/error" "^2.2.0"
