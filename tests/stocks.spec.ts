@@ -5,6 +5,7 @@
 import Token from '../api/stocks/token';
 import Item from '../api/stocks/item/[code]';
 import Search from '../api/stocks/search';
+import Cps from '../api/stocks/[code]/cps';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 describe('雪球股票数据', () => {
@@ -60,5 +61,18 @@ describe('雪球股票数据', () => {
 
     expect(res.data.name).toEqual('我武生物');
     expect(res.data.code).toEqual('SZ300357');
+  });
+
+  it('请求东方财富股票CPS', async () => {
+    const { data } = await Cps(
+      <VercelRequest>(<unknown>{ query: { code: 'SZ000858' } }),
+      <VercelResponse>(<unknown>{
+        json: () => {},
+      }),
+    );
+
+    expect(data.year).toBe(new Date().getFullYear());
+    expect(typeof data.yearStart).toBe('number');
+    expect(typeof data.yearEnd).toBe('number');
   });
 });
