@@ -4,9 +4,10 @@
 
 import Token from '../api/stocks/token';
 import Item from '../api/stocks/item/[code]';
+import Search from '../api/stocks/search';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-describe('股票数据', () => {
+describe('雪球股票数据', () => {
   it('获取雪球 token', async () => {
     const { data, success } = await Token(
       <VercelRequest>(<unknown>{}),
@@ -38,5 +39,26 @@ describe('股票数据', () => {
 
     expect(res.data.name).toEqual('贵州茅台');
     expect(res.data.symbol).toEqual('SH600519');
+  });
+  it('请求雪球股票代码', async () => {
+    const { data, success } = await Token(
+      <VercelRequest>(<unknown>{}),
+      <VercelResponse>(<unknown>{
+        json: () => {},
+      }),
+    );
+    if (!success) return;
+
+    const res = await Search(
+      <VercelRequest>(<unknown>{
+        query: { name: '我武生物', token: data.token },
+      }),
+      <VercelResponse>(<unknown>{
+        json: () => {},
+      }),
+    );
+
+    expect(res.data.name).toEqual('我武生物');
+    expect(res.data.code).toEqual('SZ300357');
   });
 });

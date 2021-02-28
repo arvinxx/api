@@ -6,15 +6,18 @@ export default async (req: VercelRequest, response: VercelResponse) => {
   const { query } = req;
 
   const res = await request
-    .get<Stock.XueqiuResponse>('https://stock.xueqiu.com/v5/stock/quote.json', {
-      params: {
-        symbol: query?.code,
-        extend: 'detail',
+    .get<Stock.XueqiuResponse<Stock.XueqiuStockData>>(
+      'https://stock.xueqiu.com/v5/stock/quote.json',
+      {
+        params: {
+          symbol: query?.code,
+          extend: 'detail',
+        },
+        headers: {
+          Cookie: `xq_a_token=${query?.token}`,
+        },
       },
-      headers: {
-        Cookie: `xq_a_token=${query?.token}`,
-      },
-    })
+    )
     .catch();
   const { error_code, data: xueqieData } = res;
 

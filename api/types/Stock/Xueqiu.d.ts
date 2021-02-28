@@ -83,16 +83,37 @@ declare module Stock {
     value: number;
   }
 
-  export interface XueqiuData {
+  export interface XueqiuStockData {
     market: Market;
     others: Others;
     quote: Quote;
     tags: Tag[];
   }
 
-  export interface XueqiuResponse {
-    data: XueqiuData;
+  export interface XueqiuResponse<T> {
+    data: T;
     error_code: number;
     error_description: string;
+  }
+
+  export interface Stock {
+    code: string;
+    name: string;
+    enName: string;
+    hasexist: string;
+    flag?: any;
+    type: number;
+    stock_id: number;
+    ind_id: number;
+    ind_name: string;
+    ind_color?: any;
+    _source: string;
+  }
+
+  export interface XueqiuSearchResponse {
+    page: number;
+    q: string;
+    size: number;
+    stocks: Stock[];
   }
 }
