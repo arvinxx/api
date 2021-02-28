@@ -5767,13 +5767,13 @@ conventional-changelog-angular@^5.0.0:
     compare-func "^2.0.0"
     q "^1.5.1"
 
-conventional-changelog-gitmoji-config@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.npm.taobao.org/conventional-changelog-gitmoji-config/download/conventional-changelog-gitmoji-config-1.4.0.tgz#aeaae17aca37ca04b771e19eaed305fb25311c5c"
-  integrity sha1-rqrheso3ygS3ceGertMF+yUxHFw=
+conventional-changelog-gitmoji-config@1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-gitmoji-config/-/conventional-changelog-gitmoji-config-1.4.1.tgz#1951d51c5967abdbb7fa922ec8355faa48fb5f47"
+  integrity sha512-YZq+uxEGs9t1V8CL5zbL8Rqj4fnwA7PiL0J8yGJZbaHBCcCjiYbVvcj5zSLs008t7txi0zSxNapHEAHTU8xoqw==
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
-    "@gitmoji/parser-opts" "1.2.5"
+    "@gitmoji/parser-opts" "1.2.6"
     cosmiconfig "^7.0.0"
 
 conventional-changelog-writer@^4.0.0:
@@ -15954,14 +15954,14 @@ select-hose@^2.0.0:
   resolved "https://registry.npm.taobao.org/select-hose/download/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
   integrity sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo=
 
-semantic-release-config-gitmoji-module@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji-module/download/semantic-release-config-gitmoji-module-1.1.0.tgz#73dd666297b81371595eb8146631d5f3d02def86"
-  integrity sha1-c91mYpe4E3FZXrgUZjHV89At74Y=
+semantic-release-config-gitmoji-module@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/semantic-release-config-gitmoji-module/-/semantic-release-config-gitmoji-module-1.1.1.tgz#18c22f4caa2ceb14d27d70721c7aaf8362146f36"
+  integrity sha512-fYOQUfsdYmGix4lGKLULlNhi5yeZIvXYTZDIrzxKeOjtuCOXTfa4hR4UKx/G33eK9HkaDMRERjznf/LesRxzZQ==
   dependencies:
     "@semantic-release/changelog" "^5.0.1"
     "@semantic-release/git" "^9.0.0"
-    conventional-changelog-gitmoji-config "1.4.0"
+    conventional-changelog-gitmoji-config "1.4.1"
 
 semantic-release@^17.4.0:
   version "17.4.0"
