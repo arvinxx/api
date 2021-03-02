@@ -18962,12 +18962,11 @@ zlib@1.0.5:
   resolved "https://registry.npm.taobao.org/zlib/download/zlib-1.0.5.tgz#6e7c972fc371c645a6afb03ab14769def114fcc0"
   integrity sha1-bnyXL8NxxkWmr7A6sUdp3vEU/MA=
 
-zotero-api-client@^0.33.0:
-  version "0.33.0"
-  resolved "https://registry.yarnpkg.com/zotero-api-client/-/zotero-api-client-0.33.0.tgz#a5453232907933a082a9de1e7dc97661d8640fea"
-  integrity sha512-wf/bpPJbqJKyLjiOAMxebyhePlXVrA1OhP0ZY/NQWvK8MO/MoAppkOi7+IKmM51US/FUMg/rYXNrb0YvXli18Q==
+zotero-api-client@^0.34.2:
+  version "0.34.2"
+  resolved "https://registry.yarnpkg.com/zotero-api-client/-/zotero-api-client-0.34.2.tgz#bd24fe68626dfff883407e3a632191f6e13c77c0"
+  integrity sha512-clD3S6WjJciYIW/8cIGbQzYgPzxOWP9BDDUTnugat8Oyds6HY+rMlUE2fYUWs6X0jb7JqGtNkpAkFZa2ka5b0w==
   dependencies:
-    core-js "^3.6.5"
     cross-fetch "^3.0.6"
     js-md5 "^0.7.3"
 
