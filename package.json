@@ -6,7 +6,6 @@
   "repository": "https://github.com/arvinxx/api.git",
   "scripts": {
     "start": "vercel dev",
-    "build": "vercel build",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "-------     ": "",
