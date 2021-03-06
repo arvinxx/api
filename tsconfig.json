@@ -2,25 +2,17 @@
   "compilerOptions": {
     "module": "CommonJS",
     "target": "ES5",
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext", "DOM"],
     "sourceMap": true,
     "baseUrl": ".",
-    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
-    "allowJs": true,
     "skipLibCheck": true,
-    "experimentalDecorators": true,
-    "strict": true,
-    "paths": {
-      "@/*": ["./src/*"],
-      "@@/*": ["./src/.umi/*"]
-    }
+    "strict": true
   },
-  "include": ["src", "types",
-    ".umirc", "mock", "api", "tests"]
+  "include": ["types", "tests", "api"]
 }
