@@ -5,4 +5,5 @@ const defaultConfig = umiConfig(process.cwd(), {});
 module.exports = {
   ...defaultConfig,
   setupFiles: [...defaultConfig.setupFiles, 'dotenv/config'],
+  collectCoverageFrom: ['<rootDir>/api/**/*.ts'],
 };

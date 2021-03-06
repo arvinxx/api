@@ -26,5 +26,5 @@ jobs:
           ZOTERO_AUTH_KEY: ${{ secrets.ZOTERO_AUTH_KEY }}
 
       - uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+#        with:
+#          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
