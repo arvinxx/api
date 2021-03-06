@@ -3,7 +3,7 @@
  */
 
 import Token from '../api/stocks/token';
-import Item from '../api/stocks/item/[code]';
+import Item from '../api/stocks/[code]';
 import Search from '../api/stocks/search';
 import Cps from '../api/stocks/[code]/cps';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
