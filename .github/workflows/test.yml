@@ -21,7 +21,7 @@ jobs:
         run: yarn lint
 
       - name: Test
-        run: yarn test
+        run: yarn test:coverage
         env:
           ZOTERO_AUTH_KEY: ${{ secrets.ZOTERO_AUTH_KEY }}
 
