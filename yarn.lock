@@ -11307,10 +11307,10 @@ saxes@^3.1.9:
   dependencies:
     xmlchars "^2.1.1"
 
-semantic-release-config-gitmoji@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji/download/semantic-release-config-gitmoji-1.1.0.tgz#9a72697e3694fa7f9385849f76898eaa60fce275"
-  integrity sha1-mnJpfjaU+n+ThYSfdomOqmD84nU=
+semantic-release-config-gitmoji@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/semantic-release-config-gitmoji/-/semantic-release-config-gitmoji-1.2.1.tgz#49e42354178cf3ad7fb6594819ac1903b0d6bf85"
+  integrity sha512-pTJl7GX40IBEPdP1Yvun+HzSWc9RP+S8TXHkhBrsmAKAHRzKjplYA5eg+C+OJMZpKovaSi11bqDveOUbkSe4tQ==
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
     "@semantic-release/changelog" "^5.0.1"
