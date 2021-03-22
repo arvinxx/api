@@ -7972,11 +7972,6 @@ jest@^25.4.0:
     import-local "^3.0.2"
     jest-cli "^25.5.4"
 
-js-md5@^0.7.3:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/js-md5/-/js-md5-0.7.3.tgz#b4f2fbb0b327455f598d6727e38ec272cd09c3f2"
-  integrity sha512-ZC41vPSTLKGwIRjqDh8DfXoCrdQIyBgspJVPXHBGu4nZlAEvG3nf+jO9avM9RmLiGakg7vz974ms99nEV0tmTQ==
-
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npm.taobao.org/js-tokens/download/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -11643,6 +11638,11 @@ source-map@^0.7.3:
   resolved "https://registry.npm.taobao.org/source-map/download/source-map-0.7.3.tgz?cache=0&sync_timestamp=1606747929782&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsource-map%2Fdownload%2Fsource-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
   integrity sha1-UwL4FpAxc1ImVECS5kmB91F1A4M=
 
+spark-md5@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npm.taobao.org/spark-md5/download/spark-md5-3.0.1.tgz#83a0e255734f2ab4e5c466e5a2cfc9ba2aa2124d"
+  integrity sha1-g6DiVXNPKrTlxGblos/JuiqiEk0=
+
 spawn-error-forwarder@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/spawn-error-forwarder/download/spawn-error-forwarder-1.0.0.tgz#1afd94738e999b0346d7b9fc373be55e07577029"
@@ -13429,13 +13429,13 @@ yocto-queue@^0.1.0:
   resolved "https://registry.npm.taobao.org/yocto-queue/download/yocto-queue-0.1.0.tgz?cache=0&sync_timestamp=1606290282107&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fyocto-queue%2Fdownload%2Fyocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha1-ApTrPe4FAo0x7hpfosVWpqrxChs=
 
-zotero-api-client@^0.34.2:
-  version "0.34.2"
-  resolved "https://registry.yarnpkg.com/zotero-api-client/-/zotero-api-client-0.34.2.tgz#bd24fe68626dfff883407e3a632191f6e13c77c0"
-  integrity sha512-clD3S6WjJciYIW/8cIGbQzYgPzxOWP9BDDUTnugat8Oyds6HY+rMlUE2fYUWs6X0jb7JqGtNkpAkFZa2ka5b0w==
+zotero-api-client@^0.35.0:
+  version "0.35.0"
+  resolved "https://registry.npm.taobao.org/zotero-api-client/download/zotero-api-client-0.35.0.tgz#3e1a9edcb4c7339f5d8c6afcdad7e2045b629bc9"
+  integrity sha1-Phqe3LTHM59djGr82tfiBFtim8k=
   dependencies:
     cross-fetch "^3.0.6"
-    js-md5 "^0.7.3"
+    spark-md5 "^3.0.1"
 
 zwitch@^1.0.0:
   version "1.0.5"

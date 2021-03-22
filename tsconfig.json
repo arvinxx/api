@@ -1,5 +1,4 @@
 {
-  "include": ["types", "tests", "api"],
   "compilerOptions": {
     "module": "CommonJS",
     "target": "ES5",
@@ -14,5 +13,6 @@
     "noUnusedLocals": true,
     "skipLibCheck": true,
     "strict": true
-  }
+  },
+  "include": ["types", "api"]
 }
