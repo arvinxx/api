@@ -47,7 +47,7 @@
     "eslint": "^7.21.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.0.0",
-    "prettier": "^2.0.1",
+    "prettier": "^2.3.0",
     "semantic-release": "^17.4.1",
     "semantic-release-config-gitmoji": "^1.2.1",
     "stylelint": "^13.12.0",
