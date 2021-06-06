@@ -71,7 +71,7 @@ describe('雪球股票数据', () => {
       }),
     );
 
-    expect(data.year).toBe(new Date().getFullYear());
+    expect(data.year).toBeGreaterThanOrEqual(new Date().getFullYear());
     expect(typeof data.yearStart).toBe('number');
     expect(typeof data.yearEnd).toBe('number');
   });
