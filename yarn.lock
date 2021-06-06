@@ -3094,10 +3094,10 @@
     ts-node "8.9.1"
     typescript "3.9.3"
 
-"@vercel/node@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.npm.taobao.org/@vercel/node/download/@vercel/node-1.9.0.tgz#6b64f3b9a962ddb1089276fad00f441a1f4b9cf0"
-  integrity sha1-a2Tzuali3bEIknb60A9EGh9LnPA=
+"@vercel/node@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-1.11.0.tgz#2c34e4cab9dfaf8a796a0b590b20d2f6cf222749"
+  integrity sha512-GmEUuOloy6Pdy5Qj5Zm7HmxcO/5VRLG99WUg15V7GD0fKq3sJtnCnzy4f1+9fpVbQGMefjy+pY1dWUhkB6YEGA==
   dependencies:
     "@types/node" "*"
     ts-node "8.9.1"
