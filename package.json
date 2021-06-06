@@ -39,7 +39,7 @@
     "@types/lodash": "^4.14.144",
     "@types/probe-image-size": "^7.0.0",
     "@umijs/fabric": "^2.5.7",
-    "@umijs/test": "^3.3.9",
+    "@umijs/test": "^3.4.25",
     "@vercel/node": "^1.9.0",
     "chalk": "^4.0.0",
     "commitlint": "^12.0.1",
