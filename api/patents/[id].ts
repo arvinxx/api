@@ -96,12 +96,31 @@ export default async (req: VercelRequest, response: VercelResponse) => {
   // 主权声明
   const claim = xpath.select1('string(//div[@class="claim-text"])', doc) as string;
 
-  // 法律状态
-  const lawStatus = await fetchStatus(applyId, queryCode);
+  // 状态清单
+  const statusList = await fetchStatus(applyId, queryCode);
+
+  // 最新的状态
+  const currentStatus = statusList[statusList.length - 1];
+  const lawStatus = currentStatus.status;
+
+  // 如果有授权的话,授权日期
+  const authorizationDate = lawStatus === '授权' ? currentStatus.date : undefined;
 
   const data = {
     success: true,
-    data: { type, name, applyId, applyDate, openId, openDate, abstract, lawStatus, claim },
+    data: {
+      type,
+      name,
+      applyId,
+      applyDate,
+      openId,
+      openDate,
+      abstract,
+      statusList,
+      claim,
+      lawStatus,
+      authorizationDate,
+    },
   };
 
   response.json(data);
