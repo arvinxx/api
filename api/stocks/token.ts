@@ -1,4 +1,4 @@
-import { request } from './_utils';
+import { request } from '../_utils';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 export default async (_: VercelRequest, res: VercelResponse) => {
