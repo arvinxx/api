@@ -1,6 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { DOMParser } from '@xmldom/xmldom';
 import xpath from 'xpath';
+import numeral from 'numeral';
 
 import { success } from '../_utils';
 
@@ -51,7 +52,7 @@ export default async (request: VercelRequest, response: VercelResponse) => {
       date,
       title,
       tradeType,
-      money: res?.groups?.money,
+      money: numeral(res?.groups?.money).value(),
       moneyInfo,
     });
   }

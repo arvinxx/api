@@ -33,6 +33,7 @@
   "dependencies": {
     "@xmldom/xmldom": "^0.8.2",
     "json-schema-faker": "^0.5.0-rcv.34",
+    "numeral": "^2.0.6",
     "probe-image-size": "^7.2.0",
     "ts-json-schema-generator": "^0.93.0",
     "umi-request": "^1.3.5",
@@ -43,6 +44,7 @@
     "@types/jest": "^26.0.23",
     "@types/json-schema-faker": "^0.5.1",
     "@types/lodash": "^4.14.144",
+    "@types/numeral": "^2.0.2",
     "@types/probe-image-size": "^7.0.0",
     "@umijs/fabric": "^2.5.7",
     "@umijs/test": "^3.3.9",
