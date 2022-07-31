@@ -5,7 +5,7 @@
 import Token from '../api/stocks/token';
 import Item from '../api/stocks/[code]';
 import Search from '../api/stocks/search';
-import Cps from '../api/stocks/[code]/cps';
+import Eps from '../api/stocks/[code]/eps';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 describe('雪球股票数据', () => {
@@ -64,7 +64,7 @@ describe('雪球股票数据', () => {
   });
 
   it('请求东方财富股票CPS', async () => {
-    const { data } = await Cps(
+    const { data } = await Eps(
       <VercelRequest>(<unknown>{ query: { code: 'SZ000858' } }),
       <VercelResponse>(<unknown>{
         json: () => {},

@@ -1,19 +1,16 @@
-import { request } from '../../_utils';
-
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+
+import { request } from '../../_utils';
 
 export default async (req: VercelRequest, response: VercelResponse) => {
   const { query } = req;
 
   const res = await request
-    .get<Stock.EasyMoneyProfitResponse>(
-      'http://f10.eastmoney.com/ProfitForecast/ProfitForecastAjax',
-      {
-        params: {
-          code: query?.code,
-        },
+    .get<Stock.EasyMoneyProfitResponse>('http://f10.eastmoney.com/ProfitForecast/PageAjax', {
+      params: {
+        code: query?.code,
       },
-    )
+    })
     .catch();
   const { jgyc } = res;
 
@@ -21,15 +18,17 @@ export default async (req: VercelRequest, response: VercelResponse) => {
     // eslint-disable-next-line @typescript-eslint/no-throw-literal
     throw res;
   }
-  const { sy2, sy3 } = jgyc.data[0];
+  // EPS2 对应的是 当年初
+  // EPS3 对应的是 下年末
+  // 东财按照前年开始 因此年份要加 2
+  const { EPS2, EPS3, YEAR2 } = jgyc[0];
 
   const data = {
     success: true,
     data: {
-      // 东财按照前年开始 因此年份要加 2
-      year: jgyc.baseYear + 2,
-      yearStart: parseFloat(sy2),
-      yearEnd: parseFloat(sy3),
+      year: YEAR2,
+      yearStart: EPS2,
+      yearEnd: EPS3,
     },
   };
 

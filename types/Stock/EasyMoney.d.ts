@@ -15,21 +15,29 @@ declare module Stock {
     zjs: string;
   }
 
-  export interface CPS {
-    jgmc: string;
-    sy: string;
-    syl: string;
-    sy1: string;
-    syl1: string;
-    sy2: string;
-    syl2: string;
-    sy3: string;
-    syl3: string;
-  }
-
-  export interface Jgyc {
-    baseYear: number;
-    data: CPS[];
+  export interface JgycItem {
+    SECUCODE: string;
+    SECURITY_CODE: string;
+    SECURITY_NAME_ABBR: string;
+    PUBLISH_DATE: string;
+    ORG_CODE: string;
+    ORG_NAME_ABBR: string;
+    YEAR1: number;
+    YEAR_MARK1: string;
+    EPS1: number;
+    PE1: number;
+    YEAR2: number;
+    YEAR_MARK2: string;
+    EPS2: number;
+    PE2: number;
+    YEAR3: number;
+    YEAR_MARK3: string;
+    EPS3: number;
+    PE3: number;
+    YEAR4: number;
+    YEAR_MARK4: string;
+    EPS4: number;
+    PE4: number;
   }
 
   export interface Mgsy {
@@ -115,7 +123,7 @@ declare module Stock {
 
   export interface EasyMoneyProfitResponse {
     pjtj: ANP[];
-    jgyc: Jgyc;
+    jgyc: JgycItem[];
     mgsy: Mgsy[];
     yctj: Yctj;
     jzcsyl: Jzcsyl[];
