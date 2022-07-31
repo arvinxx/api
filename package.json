@@ -47,7 +47,7 @@
     "@types/numeral": "^2.0.2",
     "@types/probe-image-size": "^7.0.0",
     "@umijs/fabric": "^2.5.7",
-    "@umijs/test": "^3.3.9",
+    "@umijs/test": "^4.0.0",
     "@vercel/node": "^1.9.0",
     "chalk": "^4.0.0",
     "commitlint": "^17.0.3",
