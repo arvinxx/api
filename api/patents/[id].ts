@@ -3,7 +3,11 @@ import { request } from '../_utils';
 import { DOMParser } from 'xmldom';
 import xpath from 'xpath';
 
-const fetchStatus = async (filename: string, code: string): Promise<Patents.LawStatus[]> => {
+const fetchStatus = async (
+  filename: string,
+  code: string,
+  id: string,
+): Promise<Patents.LawStatus[]> => {
   const res = await request
     .get('https://kns.cnki.net/kcms/detail/frame/ReaderComments.aspx', {
       params: {
@@ -12,6 +16,9 @@ const fetchStatus = async (filename: string, code: string): Promise<Patents.LawS
         dbcode: 'SCPD',
         filename,
         vl: code,
+      },
+      headers: {
+        Referer: `https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD2020&filename=${id}`,
       },
     })
     .catch();
@@ -91,13 +98,13 @@ export default async (req: VercelRequest, response: VercelResponse) => {
   ) as string;
 
   // 摘要
-  const abstract = xpath.select1('string(//div[@class="abstract-text"])', doc) as string;
+  const abstracts = xpath.select1('string(//div[@class="abstract-text"])', doc) as string;
 
   // 主权声明
   const claim = xpath.select1('string(//div[@class="claim-text"])', doc) as string;
 
   // 状态清单
-  const statusList = await fetchStatus(applyId, queryCode);
+  const statusList = await fetchStatus(applyId, queryCode, query.id as string);
 
   // 最新的状态
   const currentStatus = statusList[statusList.length - 1];
@@ -115,7 +122,7 @@ export default async (req: VercelRequest, response: VercelResponse) => {
       applyDate,
       openId,
       openDate,
-      abstract,
+      abstract: abstracts,
       statusList,
       claim,
       lawStatus,
