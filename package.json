@@ -35,7 +35,7 @@
     "json-schema-faker": "^0.5.0-rcv.34",
     "numeral": "^2.0.6",
     "probe-image-size": "^7.2.0",
-    "ts-json-schema-generator": "^0.93.0",
+    "ts-json-schema-generator": "^1.0.0",
     "umi-request": "^1.3.5",
     "xpath": "^0.0.32",
     "zotero-api-client": "^0.35.0"
