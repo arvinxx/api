@@ -49,7 +49,7 @@
     "@umijs/fabric": "^2.5.7",
     "@umijs/test": "^3.3.9",
     "@vercel/node": "^1.9.0",
-    "chalk": "^4.0.0",
+    "chalk": "^5.0.0",
     "commitlint": "^17.0.3",
     "commitlint-config-gitmoji": "^2.2.5",
     "cross-env": "^7.0.0",
