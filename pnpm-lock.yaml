@@ -4,6 +4,7 @@ specifiers:
   '@types/jest': ^26.0.23
   '@types/json-schema-faker': ^0.5.1
   '@types/lodash': ^4.14.144
+  '@types/numeral': ^2.0.2
   '@types/probe-image-size': ^7.0.0
   '@umijs/fabric': ^2.5.7
   '@umijs/test': ^3.3.9
@@ -19,6 +20,7 @@ specifiers:
   jest: ^26.6.3
   json-schema-faker: ^0.5.0-rcv.34
   lint-staged: ^13.0.3
+  numeral: ^2.0.6
   prettier: ^2.7.1
   probe-image-size: ^7.2.0
   semantic-release: ^19.0.3
@@ -34,6 +36,7 @@ specifiers:
 dependencies:
   '@xmldom/xmldom': 0.8.2
   json-schema-faker: 0.5.0-rcv.44
+  numeral: 2.0.6
   probe-image-size: 7.2.3
   ts-json-schema-generator: 0.93.0
   umi-request: 1.4.0
@@ -44,6 +47,7 @@ devDependencies:
   '@types/jest': 26.0.24
   '@types/json-schema-faker': 0.5.1
   '@types/lodash': 4.14.182
+  '@types/numeral': 2.0.2
   '@types/probe-image-size': 7.2.0
   '@umijs/fabric': 2.12.2
   '@umijs/test': 3.5.31
@@ -2538,6 +2542,10 @@ packages:
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
+    dev: true
+
+  /@types/numeral/2.0.2:
+    resolution: {integrity: sha512-A8F30k2gYJ/6e07spSCPpkuZu79LCnkPTvqmIWQzNGcrzwFKpVOydG41lNt5wZXjSI149qjyzC2L1+F2PD/NUA==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -7958,6 +7966,10 @@ packages:
   /num2fraction/1.2.2:
     resolution: {integrity: sha512-Y1wZESM7VUThYY+4W+X4ySH2maqcA+p7UR+w8VWNWVAd6lwuXXWz/w/Cz43J/dI2I+PS6wD5N+bJUF+gjWvIqg==}
     dev: true
+
+  /numeral/2.0.6:
+    resolution: {integrity: sha512-qaKRmtYPZ5qdw4jWJD6bxEf1FJEqllJrwxCLIm0sQU/A7v2/czigzOb+C2uSiFsa9lBUzeH7M1oK+Q+OLxL3kA==}
+    dev: false
 
   /nwsapi/2.2.1:
     resolution: {integrity: sha512-JYOWTeFoS0Z93587vRJgASD5Ut11fYl5NyihP3KrYBvMe1FRRs6RN7m20SA/16GM4P6hTnZjT+UmDOt38UeXNg==}
