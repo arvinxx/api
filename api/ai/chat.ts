@@ -26,11 +26,7 @@ export default async function handler(req: VercelRequest, response: VercelRespon
     fetch: fetch as any,
   });
 
-  const result = await api.sendMessage(messages, {
-    stream: true,
-    onProgress: (partialResponse) => {
-      console.log(partialResponse.text);
-    },
-  });
+  const result = await api.sendMessage(messages);
+
   response.json(result);
 }
