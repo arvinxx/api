@@ -56,13 +56,12 @@ export class ChatGPTAPI {
       maxResponseTokens = 1000,
       getMessageById,
       upsertMessage,
-      fetch = globalFetch,
     } = opts;
 
     this._apiKey = apiKey;
     this._apiBaseUrl = apiBaseUrl;
     this._debug = !!debug;
-    this._fetch = fetch;
+    this._fetch = globalFetch;
 
     this._completionParams = {
       model: CHATGPT_MODEL,
