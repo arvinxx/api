@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { ProxyAgent, setGlobalDispatcher } from 'undici';
+import { ProxyAgent, setGlobalDispatcher, fetch } from 'undici';
 import { ChatGPTAPI } from './_chatgpt';
 
 const IS_DEV = process.env.NODE_ENV === 'development';
@@ -23,6 +23,7 @@ export default async function handler(req: VercelRequest, response: VercelRespon
     systemMessage,
     apiKey,
     debug: IS_DEV,
+    fetch: fetch as any,
   });
 
   const result = await api.sendMessage(messages, {
